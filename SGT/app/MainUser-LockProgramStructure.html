@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head 
+         content must come *after* these tags -->
+    <title>LUT SGT:MainUser:LockProgramStructure</title>
+
+    <!-- Bootstrap -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="styles/mystyles.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <!--Creating a responsive navigation bar-->
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="#">LUT Study Guide Tool</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <!-- to hide the navbar when it is small screen instead of being vertical -->
+                <ul class="nav navbar-nav pull-right">
+                    <li id="usernameButtonStyle">
+                        <a href="#"></a>
+                        <li class="dropdown pull-right-username">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <label for="userName">User Name</label>
+                                <span class="glyphicon glyphicon-user"></span><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Dashboard</a></li>
+                                <li><a href="#">Messages</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Log out</a></li>
+                            </ul>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+
+        <!-- Main component for a primary marketing message or call to action -->
+
+        <div id="lutLogoContainer">
+            <div class="row row-header">
+                <div class="col-xs-12 col-sm-12">
+                    <img class="img-responsive" src="images/LUT Logo RGB.jpg"></img>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container container-position">
+        <div class="row row-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="">Dashboard</a></li>
+                        <li><a href="">List of Programs</a></li>
+                        <li class="active">Lock Program Structure</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="padding-top:2%;" class="col-xs-12 col-sm-12 col-md-12"></div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading clickable">
+                        <h3 class="panel-title"><label class="lightWeightLabel">Program Description</label></h3>
+                        <span class="pull-right"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                    </div>
+                    <div class="panel-body collapse">
+                        <div style="padding-top:2%;" class="col-xs-12 col-sm-12 col-md-12"></div>
+                        <div class="form-group">
+                            <label class="control-label col-xs-12 col-md-2 col-sm-2">Discipline</label>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <p class="form-control-static p-control" type="text" name="discipline" /></p>
+                            </div>
+                            <label class="control-label col-xs-12 col-md-2 col-sm-2 structureLbls">Program Name</label>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <p class="form-control-static p-control" type="text" name="nameOfProgramCreator" /></p>
+                            </div>
+                        </div>
+
+                        <div style="padding-top:2%;" class="col-xs-12 col-sm-12 col-md-12"></div>
+                        <div class="form-group">
+                            <label class="control-label col-xs-12 col-sm-2 structureLbls">Aims</label>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <p class="form-control-static p-control notes-comments-height" rows="3" type="text" name="" /></p>
+                            </div>
+                            <label class="control-label col-xs-12 col-sm-2 structureLbls">Information</label>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <p class="form-control-static p-control notes-comments-height" rows="3" type="text" name="" /></p>
+                            </div>
+                        </div>
+
+
+                        <div style="padding-top:2%;" class="col-xs-12 col-sm-12 col-md-12"></div>
+                        <div class="form-group">
+                            <label class="control-label col-xs-12 col-sm-2 structureLbls">Duration</label>
+                            <div class="col-xs-3 col-sm-1 col-md-1">
+                                <p class="form-control-static p-control" type="text" name="" /></p>
+                            </div>
+                            <div class="col-xs-9 col-sm-3 col-md-3">
+                                <p class="form-control-static p-control" type="text" name="" /></p>
+                            </div>
+                        </div>
+                        <div style="padding-bottom:2%;" class="col-xs-12 col-sm-12 col-md-12"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- Structure-->
+
+            <div style="padding-top:2%;" class="control-label col-xs-12 col-sm-12 col-md-12"></div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-md-2 col-sm-2">Structure</label>
+                <div class="col-xs-12 col-md-10 col-sm-10">
+                    <div class="structureStyle">
+                        <div class="panel panel-header">
+                            <a href="#Structure" class="list-group-item collapseManage" data-toggle="collapse">
+                                <label class="control-label">View the Structure</label>
+                            </a>
+                        </div>
+                        <div class="collapse" id="Structure">
+                            <div class="table-responsive createStructureTbl">
+                                <table class="table table-bordered">
+                                    <thead class="thead-inverse">
+                                        <tr>
+                                            <th class="col-sm-1"><label class="label-heading">#</label></th>
+                                            <th class="col-sm-5"><label class="label-heading">Name</label></th>
+                                            <th class="col-sm-1"><label class="label-heading">Min Credit</label></th>
+                                            <th class="col-sm-1"><label class="label-heading">Max Credit</label></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><label class="label-heading">1</label></th>
+                                            <td class="firstlevelTD"><label>General Studies</label></td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label class="label-heading"></label></th>
+                                            <td><label class="secondlevelTD">Obligatory</label></td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label class="label-heading"></label></th>
+                                            <td><label class="secondlevelTD">Elective</label></td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <th scope="row"><label class="label-heading">2</label></th>
+                                            <td class="firstlevelTD"><label>Major Subject</label></td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label class="label-heading"></label></th>
+                                            <td><label class="secondlevelTD">Obligatory</label></td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label class="label-heading"></label></th>
+                                            <td><label class="secondlevelTD">Elective</label></td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <th scope="row"><label class="label-heading">3</label></th>
+                                            <td class="firstlevelTD"><label>Minor Subject</label></td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label class="label-heading"></label></th>
+                                            <td><label class="secondlevelTD">Obligatory</label></td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label class="label-heading"></label></th>
+                                            <td><label class="secondlevelTD">Elective</label></td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <th scope="row"><label class="label-heading">4</label></th>
+                                            <td class="firstlevelTD"><label>Electives</label></td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                            <td>
+                                                <p class="form-control form-control-static p-control-structure"></p>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="label-group col-xs-12 col-sm-12">
+                                    <span style="width:50%;" class="label label-right pull-right ">Value</span>
+                                    <span style="width:50%;" class="label label-left pull-right">Total</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div style="padding-top:1%;" class="col-xs-12 col-sm-12 col-md-12"></div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2 structureLbls">Notes</label>
+                <div class="col-xs-12 col-sm-10 col-md-10">
+                    <p class="form-control-static p-control notes-comments-height" type="text" name=""></p>
+                    </textarea>
+                </div>
+            </div>
+
+            <div style="padding-top:2%;" class="col-xs-12 col-sm-12 col-md-12"></div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2 structureLbls">Comments</label>
+                <div class="col-xs-12 col-sm-10 col-md-10">
+                    <p class="form-control-static p-control notes-comments-height" type="text" name=""></p>
+                    </textarea>
+                </div>
+            </div>
+
+
+
+
+
+            <div style="padding-top:2%;" class="col-xs-12 col-sm-12 col-md-12"></div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2 structureLbls">Comments</label>
+                <div class="col-xs-12 col-sm-10 col-md-10"><textarea class="form-control" rows="3" type="text" name="" placeholder="<Write the comments here>" /></textarea>
+                </div>
+            </div>
+
+
+
+            <div style="padding-top:5px;" class="col col-xs-12 col-sm-12 col-md-12"></div>
+            <div class="form-group">
+                <div class="col-xs-12 col-sm-12 ">
+                    <button type="button" class="btn mainBtns submitBtns pull-right">Lock</button>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-sm-12 col-xs-12">
+                    <button type="button" class="btn mainBtns cancelBtns pull-right">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="scripts/myScripts.js"></script>
+
+</body>
+
+</html>

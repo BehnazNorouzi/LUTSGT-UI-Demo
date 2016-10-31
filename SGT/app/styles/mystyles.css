@@ -1,0 +1,757 @@
+/*------------------------------------------------------------------*/
+/*Hide body scrollbar but still scrollable*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+
+
+/*Header,Footer,Container and NavBar Styles*/
+body {
+    padding: 40px 0px 0px 0px;
+    z-index: 0;
+
+}
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.container-position {
+    margin-top: 2%;
+}
+
+.jumbotron {
+    margin: 0px auto;
+    background: #FFFFFF;
+    height: 150px;
+}
+
+#lutLogoContainer {
+    height: 150px;
+    width: 300px;
+}
+
+.navbar-inverse {
+    background: #303F9F;
+}
+
+.navbar-inverse .navbar-nav> .active> a,
+.navbar-inverse .navbar-nav> .active> a:hover,
+.navbar-inverse .navbar-nav> .active> a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav> .open> a,
+.navbar-inverse .navbar-nav> .open> a:hover,
+.navbar-inverse .navbar-nav> .open> a:focus {
+    color: #fff;
+    background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: #303F9F;
+    color: #eeeeee;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
+    color: #000000;
+}
+
+.breadcrumb {
+    margin-left: 0px;
+    background-color: #000;
+    border-radius: 0px;
+}
+
+.breadcrumb li> a {
+    color: #f60;
+}
+
+.breadcrumb .active {
+    color: #fff;
+    font-weight: lighter;
+}
+
+
+
+.navbar-brand{
+    color: #fff;
+}
+
+.footer {
+    background-color: #e6e6e6;
+}
+/*------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------------*/
+/*Login Page*/
+
+.login-page {
+    background-color: #F5F5F5;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+#loginBody {
+    background-color: #808080;
+}
+
+@media (max-width: 768px) {
+    .LUTlbl {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 768px) {
+    .lutLogoLoginRowLeftSide {
+        padding-top: 175px;
+    }
+}
+
+@media (min-width: 768px) {
+    .lutLogoLoginRowRightSide {
+        padding-top: 440px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lutLogoLoginRowRightSide {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-fluid {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.lutLogoLoginRowRightSide .panel {
+    border-radius: 0px;
+}
+
+.lutLogoLoginRowRightSide .form-group .btn {
+    background-color: #e60039;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #fff;
+    font-size: large;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+/*------------------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
+/*DashboardsStyles*/
+
+.dashboardButtonStyle .badge {
+    background-color: #F5F5F5;
+    color: #9ACD32;
+    font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+    .dashboardButtonStyle .badge-btn {
+        width: 60%;
+        font-size: normal;
+
+    }
+}
+
+.badge-btn {
+    width: 100%;
+    background-color: #F5F5F5;
+    color: #f60;
+    text-align: left;
+    padding-top: 1%;
+    border-style: dashed;
+    border-color: #C0C0C0;
+    border-width: 1px;
+    font-weight: bold;
+    font-size: normal;
+}
+/*------------------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
+/*For All Pages*/
+
+.panelRadius .list-group-item {
+    border-radius: 0px;
+}
+
+.panelRadius .form-control {
+    font-weight: lighter;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: normal;
+    background-color: none;
+    background: none;
+}
+
+div.row:last-child {
+    margin-bottom: 5%;
+}
+
+.form-group .form-control {
+    border-radius: 0px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.form-group .col-xs-12> .mainBtns {
+    width: 100%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    margin-top: 1%;
+    text-align: center;
+    background-color: #F5F5F5;
+    color: #636261;
+    font-weight: bold;
+    font-size: medium;
+    
+}
+
+
+
+@media (min-width: 768px) {
+    .form-group .col-sm-12> .mainBtns {
+        width: 33%;
+        padding-bottom: 1.5%;
+        padding-top: 1.5%;
+        margin-top: 1%;
+        text-align: center;
+        background-color: #F5F5F5;
+        color: #636261;
+        font-weight: bold;
+        font-size: medium;
+    }
+}
+
+.form-group .saveBtns {
+    border-style: double;
+    border-color: #0099ff;
+}
+
+.form-group .submitBtns {
+    border-style: double;
+    border-color: #00cc66;
+}
+
+.form-group .cancelBtns {
+    border-style: double;
+    border-color: #ff9900;
+}
+
+.form-group .editBtns {
+    border-style: double;
+    border-color: #e6b3cc;
+}
+
+.form-group .rejectBtns {
+    border-style: double;
+    border-color: #ff0000;
+}
+/*------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------------*/
+/*Computer Science Courses List & ProgramsList */
+
+#electiveStudies {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.nav-pills ul {
+    position: fixed;
+    top: 30%;
+}
+
+.tableHeaderStyleForLists {
+    margin-left: 2%;
+    color: #f60;
+    font-size: x-large;
+}
+
+#generalStudies {
+    color: #000;
+    background-color: #F5F5F5;
+    border-style: dashed;
+    border-color: #C0C0C0;
+    border-width: 1px;
+}
+
+#obligatoryStudies {
+    color: #000;
+    background-color: #F5F5F5;
+    border-style: dashed;
+    border-color: #C0C0C0;
+    border-width: 1px;
+}
+
+#electiveStudies {
+    color: #000;
+    background-color: #F5F5F5;
+    border-style: dashed;
+    border-color: #C0C0C0;
+    border-width: 1px;
+}
+
+#programsList {
+    color: #000;
+    background-color: #F5F5F5;
+    border-style: dashed;
+    border-color: #C0C0C0;
+    border-width: 1px;
+}
+
+.listOfComputerScienceCoursesTableAndPrograms {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    margin-bottom: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#addAnewProgramBtn {
+    border-style: double;
+    border-color: #9ACD32;
+}
+/*------------------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
+/* PiCH-updateCourseDetails */
+
+.removeBtnTbl {
+    width: 50%;
+    color: #ff0000;
+}
+
+.addBtnTbl {
+    width: 50%;
+    color: #009933;
+}
+
+.form-group .panel-group .panel .panel-heading .panel-title .glyphicon-plus {
+    color: #ff9900;
+}
+
+@media (min-width: 768px) {
+    .form-group .smallInputsForTeacherTable {
+        width: 100%;
+    }
+}
+
+.smallInputsForTeacherTable {
+    width: 30%;
+}
+
+@media (min-width: 768px) {
+    .form-group .textAlignForSmallLblsInTeacherTable {
+        text-align: right;
+    }
+}
+
+.textAlignForSmallLblsInTeacherTable {
+    text-align: left;
+}
+
+.form-group .panel-group .panel .panel-heading .panel-title {
+    color: #303F9F;
+    font-size: small;
+    font-weight: bold;
+}
+/*------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
+/*Program Director*/
+
+.structureLabelStyle> label {
+    font-size: small;
+    font-weight: lighter;
+}
+
+.structureLabelStyle {
+    font-size: normal;
+    font-weight: lighter;
+}
+
+
+/* Icon when the collapsible content is shown */
+
+.collapseManage:after {
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    float: right;
+    margin-left: 15px;
+    color: #ffd24d;
+    font-weight: lighter;
+}
+
+
+/* Icon when the collapsible content is hidden */
+
+.collapseManage.collapsed:after {
+    content: "\e080";
+}
+
+.hrStyle> hr {
+    border-color: #ffcc80;
+    border-style: dashed;
+}
+
+.collapse .inputStyle .col> input {
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: dashed;
+    border-bottom-color: #ace600;
+    width: 50px;
+}
+
+.structureStyle .panel> a {
+    border-radius: 0px;
+}
+
+.structureStyle .panel-header> a {
+    background-color: #F5F5F5;
+    color: #303F9F;
+}
+
+.structureStyle2,
+.structureStyle2> label {
+    background-color: #F5F5F5;
+    color: #303F9F;
+}
+
+.list-group div:last-child {
+    background-color: #F5F5F5;
+    border-style: none;
+}
+
+@media (min-width: 768px) {
+    .label-group .label-left {
+        width: 41.5%;
+        background-color: #fff0b3;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        color: #665200;
+        border-style: none;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 0px;
+    }
+    .label-group .label-right {
+        width: 41.5%;
+        background-color: #ffe066;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        color: #408000;
+        border-style: none;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 0px;
+    }
+}
+
+.label-left {
+    width: 50%;
+    background-color: #fff0b3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #665200;
+    border-style: none;
+    border-radius: 0px;
+}
+
+.label-right {
+    width: 50%;
+    background-color: #ffe066;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #665200;
+    border-style: none;
+    border-radius: 0px;
+}
+
+@media (min-width: 768px) {
+    .firstRowsPadding {
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+}
+
+.collapseManage2:after {
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    float: right;
+    margin-left: 15px;
+    color: #ffd9cc;
+    font-weight: lighter;
+    font-size: small;
+}
+
+
+/* Icon when the collapsible content is hidden */
+
+.collapseManage2.collapsed:after {
+    content: "\e080";
+}
+
+.rowBackColor {
+    background-color: #fff5e6;
+}
+
+.createCourseTbl .label-control {
+    font-weight: bold;
+    font-size: small;
+    color: #303F9F;
+}
+
+.createCourseTbl .form-control {
+    border-style: none;
+    background-color: #ebeef9;
+    border-radius: 0px;
+}
+
+.createStructureTbl .label-heading {
+    font-weight: bold;
+    font-size: small;
+    color: #303F9F;
+}
+
+@media (min-width: 768px) {
+    .createStructureTbl .label-heading {
+        padding-left: 10px;
+    }
+}
+
+.createStructureTbl .firstlevelTD {
+    background-color: #ebeef9;
+    padding-top: 1%;
+}
+
+.createStructureTbl .form-control {
+    border-style: double;
+    border-color: #d8def3;
+    width: 60%;
+    margin-left: 25%;
+}
+
+.secondlevelTD {
+    font-weight: lighter;
+}
+
+
+/* PD-Activate/Deactivate Courses */
+
+.selectCoursesDropDown {
+    border-radius: 0px;
+    width: 50%;
+}
+
+.combobox {
+    border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+    .space {
+        padding-top: 10px;
+    }
+}
+/*------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
+.courseSearchDropDown .dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+
+.courseSearchDropDown .input-group-btn .btn-group {
+    display: flex !important;
+}
+
+.courseSearchDropDown .btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+
+.courseSearchDropDown .btn-group .btn:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+    #search {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .courseSearchDropDown .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .courseSearchDropDown .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}
+/*------------------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------------------------*/
+/*Styling View Modes*/
+
+.p-control {
+    width: 100%;
+    max-height: 100%;
+    word-wrap: break-word;
+    word-break: break-word;
+    background-color: #d9d9d9;
+    padding-left: 10px;
+
+}
+
+@media screen and (min-width: 1200px) {
+    #programNameForActivateDeactivatePage {
+        margin-left: 25px;
+    }
+}
+
+.notes-comments-height {
+    height: 80px;
+    overflow-y: auto;
+}
+
+.p-control-structure {
+    width: 100%;
+    max-height: 100%;
+    word-wrap: break-word;
+    word-break: break-word;
+    border-style: double;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .form-group .smallInputsForTeacherTableViewMode {
+        width: 100%;
+        max-height: 100%;
+        word-wrap: break-word;
+        word-break: break-word;
+        background-color: #d9d9d9;
+        text-align: center;
+    }
+}
+
+.smallInputsForTeacherTableViewMode {
+    width: 30%;
+    max-height: 100%;
+    word-wrap: break-word;
+    word-break: break-word;
+    background-color: #d9d9d9;
+    text-align: center;
+}
+
+.overflow-y {
+    overflow-y: auto;
+}
+
+.courseNameLabel {
+    font-weight: lighter;
+}
+
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+    color: #ffd24d;
+}
+
+.panel {
+    border-radius: 0px;
+}
+
+.lightWeightLabel {
+    font-weight: bold;
+    font-size: small;
+    color: #303F9F;
+}
+
+.accordion-toggle:hover {
+    text-decoration: none;
+}
+
+.list-group:hover{
+    text-decoration: none;
+    background-color:  none ;
+    
+}
+
+
+.PSheadingStyle .list-group-item{
+    background-color: #F5F5F5;
+    border-radius: 0px;
+    border-width: 0px;
+    border-bottom-width: 1px;
+}
+
+.panel.PSheadingStyle{
+    border-color: #e6e6e6;
+    border-top-color: none;
+}

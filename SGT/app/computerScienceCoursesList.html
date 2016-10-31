@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head 
+         content must come *after* these tags -->
+    <title>LUT SGT: Dashboard</title>
+        <!-- Bootstrap -->
+      <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+      <link href="bootstrap-social.css" rel="stylesheet">
+      <link href="styles/mystyles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>img
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <!--Creating a responsive navigation bar-->
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">LUT Study Guide Tool</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse"> <!-- to hide the navbar when it is small screen instead of being vertical -->
+                    <ul class="nav navbar-nav pull-right">
+                        <li id="usernameButtonStyle"><a href="#"></a>
+                            <li class="dropdown pull-right-username">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false"> <label for="userName">User Name</label>
+                               <span class="glyphicon glyphicon-user"></span><span class="caret"></span></a>
+                               <ul class="dropdown-menu">
+                                   <li><a href="">Dashboard</a></li>
+                                   <li><a href="#">Messages</a></li>
+                                   <li role="separator" class="divider"></li>
+                                   <li><a href="#">Log out</a></li>
+                              </ul>
+                            </li>
+                     </li>
+                    </ul>
+                    
+                </div>
+               
+            </div>
+        </nav>  
+        
+        
+    <header class="jumbotron">
+
+        <!-- Main component for a primary marketing message or call to action -->
+
+        <div id="lutLogoContainer">
+            <div class="row row-header">
+                <div class="col-xs-12 col-sm-12">
+                    <img class="img-responsive" src="images/LUT Logo RGB.jpg"></img>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+        <div class="container container-position" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+            <div class="row row-content">
+                <div class="col-xs-12">
+                   <ul class="breadcrumb">
+                       <li><a href="">Home</a></li>
+                       <li><a href="">Dashboard</a></li>
+                       <li class="active">List of Courses</li>
+                   </ul>
+                </div>
+                
+                
+                <div style="padding-top:2%;" class="col-xs-12 col-sm-12 col-md-12"></div>
+                <div class="allSections col-xs-12 col-sm-12">
+                  <div id="generalStudies">    
+                     <h2 class="tableHeaderStyleForLists">General Studies</h2>
+                     <table class="table table-responsive listOfComputerScienceCoursesTableAndPrograms">
+                         <tbody>
+                            <tr><td><a>CT10A0015 Introduction to M.Sc. Studies in Computer Science</a></td></tr>
+                            <tr><td><a>CT10A9510 Research Methods in Software Engineering</a></td></tr>
+                            <tr><td><a>CT60A7101 Seminar on Software Engineering</a></td></tr>
+                            <tr><td><a>FV11A9800 Academic Writing in English Course 1</a></td></tr>
+                            <tr><td><a>FV11A9900 Academic Writing in English Course 2</a></td></tr>
+                            <tr><td><a>FV18A9101 Finnish 1</a></td></tr>
+                         </tbody>
+                     </table>
+                  </div>
+                  <p style="padding-bottom:5px;"></p>
+                  <div id="obligatoryStudies"> 
+                    <h2 class="tableHeaderStyleForLists">Obligatory Studies</h2>
+                    <table class="table table-responsive listOfComputerScienceCoursesTableAndPrograms">
+                         <tbody>
+                            <tr><td><a>CT30A8903 Software Systems as a Service: Technology and Engineering</a></td></tr>
+                            <tr><td><a>CT60A7201 Architecture in Systems and Software Development</a></td></tr>
+                            <tr><td><a>CT60A7500 Object-Oriented Programming Techniques</a></td></tr>
+                            <tr><td><a>CT60A5101 Models and Methods of Software Engineering</a></td></tr>
+                            <tr><td><a>CT10A6001 Master’s Thesis</a></td></tr>
+                         </tbody>
+                    </table>
+                  </div> 
+                  <p style="padding-bottom:5px;"></p>
+                  <div id="electiveStudies">         
+                    <h2 class="tableHeaderStyleForLists">Elective Studies</h2>
+                    <table class="table table-responsive listOfComputerScienceCoursesTableAndPrograms">
+                         <tbody>
+                            <tr><td><a>CT10A7001 Green IT and Sustainable Computing</a></td></tr>
+                            <tr><td><a>CT10A9201 Game Design - from Concepts to Implementation</a></td></tr>
+                            <tr><td><a>CT30A5002 Games and Networking</a></td></tr>
+                            <tr><td><a>CT10A9520 Research Project in Software Engineering</a></td></tr>
+                            <tr><td><a>CT30A5002 Games and Networking</a></td></tr>
+                            <tr><td><a>CT30A5110 Gamification - from Concepts to Implementations</a></td></tr>
+                            <tr><td><a>CT30A5301 Strategic Development Project of Network Administrative Tools</a></td></tr>
+                            <tr><td><a>CT30A8920 Sustainable Innovation by Design: A User Experience Perspective</a></td></tr>
+                            <tr><td><a>CT30A9301 Code Camp on Platform Based Application Development</a></td></tr>
+                            <tr><td><a>CT60A5200 Software Projects and Process Improvement</a></td></tr>
+                            <tr><td><a>CT60A7001 Critical Thinking and Argumentation in Software Engineering</a></td></tr>
+                            <tr><td><a>CT60A7302 Software Quality, Processes, and Organizations</a></td></tr>
+                            <tr><td><a>CT60A7321 Software Business Development</a></td></tr>
+                            <tr><td><a>CT60A7400 Fundamentals of Information Systems</a></td></tr>
+                            <tr><td><a>CT60A8000 Game Development Project</a></td></tr>
+                            <tr><td><a>CT60A9500 Gadget Code Camp – Hacking Technology</a></td></tr>
+                            <tr><td><a>CS30A7401 Software and Application Innovation</a></td></tr>
+                            <tr><td><a>BL40A1000 Real-time Operating Systems and Programs</a></td></tr>
+                            <tr><td><a>BL40A1100 Embedded System Programming</a></td></tr>
+                            <tr><td><a>BM40A0000 International Summer School in Novel Computing</a></td></tr>
+                         </tbody>
+    
+                    </table>
+                  </div>
+                  <p style="padding-bottom:5px;"></p>
+               </div>
+        </div>
+    </div>
+    
+
+
+    
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    
+    
+</body>
+
+</html>
